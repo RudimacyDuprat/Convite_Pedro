@@ -20,7 +20,7 @@ body::before {
   /* Mude a URL para o caminho local da imagem */
   background: url('imagens/numberblocks.jpg') no-repeat center center;
   background-size: cover;
-  opacity: 0.15;
+  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
