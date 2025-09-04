@@ -1,0 +1,166 @@
+/* Importação de fontes para um visual mais moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Estilos Globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, #485b70, #22303f, #22303f, #1e2a38);
+    background-size: 800% 800%;
+    animation: gradientBG 20s ease infinite;
+    color: #ccc;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  /* Mude a URL para o caminho local da imagem */
+  background: url('./imagens/numberblocks.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 2rem;
+    background: rgba(14, 20, 24, 0.301);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.089);
+    animation: fadeIn 1.5s ease forwards;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo-animado {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 900;
+    color: #ddd;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+}
+
+.titulo-animado span#pedro {
+    display: inline-block;
+    animation: mexerPedro 3s ease-in-out infinite;
+    color: #429db4e5;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
+}
+
+.gif-animado {
+    width: 180px;
+    margin: 20px auto;
+    display: block;
+    animation: pulse 3s infinite;
+}
+
+.frase-tema {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 15px 0;
+    color: #bbb;
+}
+
+.informacoes-evento p {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #aaa;
+    margin: 10px 0;
+    transition: transform 0.2s ease;
+}
+
+.informacoes-evento p:hover {
+    transform: translateX(5px);
+}
+
+.contador {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #23e243b7;
+    margin: 20px 0;
+    text-shadow: 0 0 4px #429db4e5;
+}
+
+.qr-code p {
+    font-size: 1.1rem;
+    color: #bbb;
+    font-weight: 600;
+}
+
+.qr-code img {
+    margin-top: 1rem;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(135, 165, 193, 0.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.qr-code img:hover {
+    transform: scale(1.05);
+}
+
+.botao-rsvp {
+    background-color: #23e243b7;
+    color: rgb(14, 20, 13);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.botao-rsvp:hover {
+    background-color: #23e243b7;
+}
+
+.footer {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #23e243b7;
+    text-shadow: 0 0 4px #429db4d5;
+}
+
+/* Animação para o nome Pedro (Pulo Vibrante) */
+@keyframes mexerPedro {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        color: #23e243b7; /* Cor normal */
+    }
+    25% {
+        transform: translateY(-8px) rotate(-5deg) scale(1.02); /* Sobe um pouco, gira e cresce */
+        color: #b0c4de; /* Uma cor um pouco mais clara ao subir */
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+        color: #dbdf18; /* Volta à cor normal */
+    }
+    75% {
+        transform: translateY(-4px) rotate(3deg) scale(1.01); /* Um pulo menor e giro para o outro lado */
+        color: #b0c4de;
+    }
+}
+
+/* Garanta que o span#pedro use essa animação */
+.titulo-animado span#pedro {
+    display: inline-block;
+    animation: mexerPedro 2s ease-in-out infinite; /* Ajustei a duração para 2s para ser mais rápido */
+    /* As cores e sombras já estão definidas na animação, mas você pode manter aqui se preferir um padrão */
+    /* color: #a9a9a9; */
+    /* text-shadow: 0 0 4px rgba(255, 255, 255, 0.15); */
+}
