@@ -17,7 +17,7 @@ body {
 
 body::before {
   content: "";
-  background: url('imagens/numberblocks.jpg') no-repeat center center;
+  background: url('/Convite_Pedro/imagens/numberblocks.jpg') no-repeat center center;
   background-size: cover;
   opacity: 0.15;
   position: fixed;
