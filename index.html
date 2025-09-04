@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário do Pedro!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="iniciarContador()">
+  <div class="container">
+    <header>
+      <h1 class="titulo-animado">🎉 <span id="pedro">Pedro</span> faz 5 anos! 🎉</h1>
+    </header>
+
+    <section class="banner">
+      <img src="https://media.giphy.com/media/XyNlqQIdNxGkA/giphy.gif" alt="Numberblocks Animado" class="gif-animado" />
+      <p class="frase-tema">“Vamos contar juntos até 5, dançar e se divertir como verdadeiros Numberblocks!”</p>
+    </section>
+
+    <section class="informacoes-evento">
+      <div class="info">
+        <p><strong>📅 Data:</strong> 22/11/2025</p>
+        <p><strong>🕒 Horário:</strong> 10:00</p>
+        <p><strong>📍 Local:</strong> Rua Marquês Valente, 44 – Jaguaribe, Abreu e Lima</p>
+      </div>
+
+      <div id="contador" class="contador"></div>
+
+      <div class="qr-code">
+        <p>📌 Clique ou escaneie o QR Code para o local:</p>
+        <a href="https://maps.app.goo.gl/5MqZDvqKYJS2JbFs9" target="_blank" rel="noopener noreferrer" aria-label="Abrir mapa do local">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://maps.app.goo.gl/5MqZDvqKYJS2JbFs9" alt="QR Code Local" />
+        </a>
+      </div>
+    </section>
+    
+    <button class="botao-rsvp" onclick="window.open('https://wa.me/5581997753861?text=Olá,%20gostaria%20de%20confirmar%20presença%20no%20aniversário%20do%20seu%20filho.', '_blank')">Confirmar Presença</button>
+    <footer class="footer">
+      <p>Esperamos você para somar alegria com a gente! 🎈
+        OBS: Vem com Traje de Banho!
+      </p>
+      
+    </footer>
+
+  </div>
+
+  <audio id="musica" autoplay>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3e45e6f682.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
