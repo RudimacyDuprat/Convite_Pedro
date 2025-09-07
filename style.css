@@ -110,7 +110,7 @@ body::before {
     transform: scale(1.05);
 }
 
-botao-rsvp {
+.botao-rsvp {
     background-color: #23e243b7;
     color: rgb(14, 20, 13);
     padding: 12px 24px;
